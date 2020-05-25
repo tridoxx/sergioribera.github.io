@@ -14,7 +14,7 @@ $(function(){
 });
 
 function preload() {
-  font = loadFont('../lib/AvenirNextLTPro-Demi.otf');
+  font = loadFont('lib/AvenirNextLTPro-Demi.otf');
   bg = loadImage('img/abstract.png');
 }
 
