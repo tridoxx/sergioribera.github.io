@@ -13,6 +13,18 @@ canvas{
     z-index: 1;
     background-color: rgba(0, 0, 0, .6);
 }
+h3{
+    cursor: default;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 65vh !important;
+    text-align-last: center;
+    color: white;
+}
+span{
+    width: 100%;
+}
 footer{
     display: flex;
     height: 35vh;
@@ -1699,9 +1711,6 @@ section {
 #ts-footer nav .nav-link:first-child {
     padding-top: 0;
 }
-.ts-title {
-}
-
 @media (max-width: 35.9375rem) {
     .ts-title {
         margin-bottom: 2rem;
