@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Black Dashboard by Creative Tim
+  </title>
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar" data="blue">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
+    -->
+      <div class="sidebar-wrapper">
+        <div class="logo">
+          <a href="javascript:void(0)" class="simple-text logo-mini">
+            Blog
+          </a>
+          <a href="javascript:void(0)" class="simple-text logo-normal">
+            SergioRiberaID
+          </a>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="./dashboard.html">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./icons.html">
+              <i class="tim-icons icon-paper"></i>
+              <p>Posts</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel" data="blue">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Posts</a>
+          </div>
+        </div>
+      </nav>
+      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+      <div id="list_posts" class="content" style="display: none;">
+        <div class="row ml-2 my-3">
+            <input type="button" class="btn btn-fill btn-secondary" value="New Post" style="margin-right: 15px;">
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card ">
+              <div class="card-header">
+                <h4 class="card-title">Posts</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table tablesorter " id="">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Comentarios
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas maxime impedit esse sed nihil optio?
+                        </td>
+                        <td>
+                          Lorem
+                        </td>
+                        <td style="text-align: end;">
+                            <input type="button" class="btn btn-fill btn-secondary" value="Editar" style="margin-right: 15px;">
+                            <button type="button" aria-hidden="true" class="close" style="color: red;">
+                                <i class="tim-icons icon-simple-remove"></i>
+                            </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas maxime impedit esse sed nihil optio?
+                        </td>
+                        <td>
+                          Lorem
+                        </td>
+                        <td style="text-align: end;">
+                            <input type="button" class="btn btn-fill btn-secondary" value="Editar" style="margin-right: 15px;">
+                            <button type="button" aria-hidden="true" class="close" style="color: red;">
+                                <i class="tim-icons icon-simple-remove"></i>
+                            </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="new_post" class="content">
+        <div class="form-group">
+            <label>Name Post:</label>
+            <input type="text" data="blue" class="form-control" placeholder="Name Post" value="">
+            <div class="row mx-2" style="justify-content: space-between;">
+                <label class="mt-5 mb-2">Content Post:</label>
+                <div style="align-self: flex-end;">
+                    <button type="button" class="btn btn-fill btn-secondary" onclick="Save()">Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-ms-6" style="height: fit-content;">
+                <div id="editor"></div>
+            </div>
+            <div class="col-sm-6 col-ms-6">
+                <iframe id="editor-preview" frameborder="0" id="iframe-preview" style="height: 100%;width: 100%;"></iframe>
+            </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                Creative Tim
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script>
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+    var quill = new Quill('#editor', {
+        theme: 'snow',
+        modules: {
+            toolbar: [
+                    ['bold', 'italic', 'underline', 'strike'],
+                    ['blockquote', 'code-block'],
+                    [{ 'header': 1 }, { 'header': 2 }],
+                    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                    [{ 'script': 'sub'}, { 'script': 'super' }],
+                    [{ 'indent': '-1'}, { 'indent': '+1' }],
+                    [{ 'direction': 'rtl' }],
+                    [{ 'size': ['small', false, 'large', 'huge'] }],
+                    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+                    [{ 'color': [] }, { 'background': [] }],
+                    [{ 'font': [] }],
+                    [{ 'align': [] }],
+                    ['clean']
+                ]
+        }
+    });
+    var iframePreview = document.getElementById('editor-preview');
+    let change = false;
+    quill.on("text-change", (delta)=>{ change = true; });
+    // Save periodically
+    setInterval(function() {
+        if(change){
+            iframePreview.contentDocument.open();
+            iframePreview.contentDocument.write(quill.root.innerHTML);
+            iframePreview.contentDocument.head.innerHTML = '<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">';
+            iframePreview.contentDocument.close();
+            change = false;
+        }
+    }, 2*1000);
+    function Save(){
+        let contentQuill = quill.root.innerHTML;
+        console.log(Serialize(quill.getContents().ops));
+    }
+    function Serialize(data){
+        var textSer = "";
+        data.forEach(element => {
+            if(element.attributes != undefined){
+                textSer += element.attributes;
+            }else{
+                textSer += element.insert;
+            }
+        });
+        return textSer;
+    }
+    /*
+
+    Caratula
+    Porque lo elegí
+    Como se va a desarrollar
+    Conclucion
+
+    Power Point
+    Word
+
+    */
+    </script>
+</body>
+
+</html>

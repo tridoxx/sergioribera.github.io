@@ -1,0 +1,21 @@
+/****************
+*** DEFAULTS
+*****************/
+* { margin: 0px; padding: 0px; }
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(240, 240, 240);
+}
+/* HEADINGS DEFAULT */
+h1, h2, h3, h4, h5, h6 { color: rgb(26, 26, 26); }
+a { text-decoration: none; }
+ul, ol { margin-left: 40px; }
+hr { margin: 10px 0px; }
+span{ font-size: .5rem;color: black; }
+.post {
+    box-shadow: black 0px 0px 7px;
+    width: 100%;
+    text-align-last: left;
+};
