@@ -1,0 +1,48 @@
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+::-webkit-resizer{
+	background: transparent;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lucida Console';
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    overflow: overlay;
+}
+.container{
+    width: 85%;
+    height: 93%;
+    text-align: left;
+    overflow: overlay;
+    padding-top: 5%;
+}
+.px{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+input{
+    border: none;
+    background-color: black;
+    color: white;
+    height: 100%;
+    padding: 2%;
+    caret-color: white;
+}
+input:target, input:focus{
+    border-style: none;
+}
+img{
+    max-width: 100%;
+}
