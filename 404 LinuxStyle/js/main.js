@@ -55,8 +55,12 @@ function LoadNextText(){
                 $(this).dequeue();
             });
         }
-        if(indexInicio == textsInicio.length)
+        if(indexInicio == textsInicio.length){
             keyPressActive = true;
+            $("#input_trampa").prompt();
+            $("#input_trampa").focus();
+            $("#input_trampa").click();
+        }
         c.scrollTo(0, c.scrollHeight);
     }
 }
