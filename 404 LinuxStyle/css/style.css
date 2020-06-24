@@ -23,10 +23,9 @@ body{
 }
 .container{
     width: 85%;
-    height: 93%;
+    height: 95%;
     text-align: left;
     overflow: overlay;
-    padding-top: 5%;
 }
 .px{
     padding-left: 5%;
