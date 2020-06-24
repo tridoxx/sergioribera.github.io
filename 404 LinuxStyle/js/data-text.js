@@ -35,8 +35,8 @@ const texts = [
 const textsInicio = [
     {text:"<p><code>SergioRibera Linux 20.20.6-sarch1-1 (tty1)</code></p><br>"},
     {text:"<p><code>sarchiso login: root (automatic login)</code></p><br>"},
-    {text:"<img src=\"img/404.png\"></img><br><br><p><code style=\"color:red\">&nbsp;&nbsp;&nbsp;&nbsp;1) go to home</code></p><p><code style=\"color:red\">&nbsp;&nbsp;&nbsp;&nbsp;2) contact me</code></p><br>"},
+    {text:"<img src=\"img/404.png\"></img><br><br><p onclick=\"goTo()\" class=\"option_C\"><code style=\"color:red\">&nbsp;&nbsp;&nbsp;&nbsp;1) go to home</code></p><p onclick=\"contactMe()\" class=\"option_C\"><code style=\"color:red\">&nbsp;&nbsp;&nbsp;&nbsp;2) contact me</code></p><br>"},
     {text:"<input type=\"text\" style=\"display:contents;\" id=\"input_t\"><code><code style=\"color:red\">root</code>@sarchiso<code style=\"color:yellow\">~#</code>&nbsp;</code>"},
 ];
-const textBye = "<p><code style=\"color:white;font-size:24px;\">&nbsp;&nbsp;&nbsp;&nbsp;Good Bye  :D</code></p> <br> <code><code style=\"color:red\">root</code>@sarchiso<code style=\"color:yellow\">~#</code>&nbsp;</code>";
-const textContact = "<p><code style=\"color:white;font-size:24px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write to email: <code style=\"color:yellow\">contact@sergioribera.com</code></code></p> <br> <code><code style=\"color:red\">root</code>@sarchiso<code style=\"color:yellow\">~#</code>&nbsp;</code>";
+const textBye = "<br><p><code style=\"color:white;font-size:24px;\">&nbsp;&nbsp;&nbsp;&nbsp;Good Bye  :D</code></p> <br> <code><code style=\"color:red\">root</code>@sarchiso<code style=\"color:yellow\">~#</code>&nbsp;</code>";
+const textContact = "<br><p><code style=\"color:white;font-size:24px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write to email: <code style=\"color:yellow\">contact@sergioribera.com</code></code></p> <br> <code><code style=\"color:red\">root</code>@sarchiso<code style=\"color:yellow\">~#</code>&nbsp;</code>";

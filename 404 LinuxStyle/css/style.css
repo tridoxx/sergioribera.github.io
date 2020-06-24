@@ -46,3 +46,7 @@ input:target, input:focus{
 img{
     max-width: 100%;
 }
+.option_C{margin-top: .5rem;}
+.option_C:hover{
+    cursor: pointer;
+}

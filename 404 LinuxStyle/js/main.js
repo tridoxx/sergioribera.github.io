@@ -22,7 +22,6 @@ document.addEventListener('keydown', function(event) {
                 window.location.href = window.location.protocol + "//" + window.location.host;
                 $(this).dequeue();
             });
-            keyPressActive = false;
         }else if(event.key == "2"){
             c.innerHTML += textContact;
             c.scrollTo(0, c.scrollHeight);
@@ -30,6 +29,22 @@ document.addEventListener('keydown', function(event) {
         
     }
 });
+
+function goTo(){
+    c.innerHTML += "1";
+    c.innerHTML += textBye;
+    c.scrollTo(0, c.scrollHeight);
+    $(this).delay(1000).queue(function() {
+        window.location.href = window.location.protocol + "//" + window.location.host;
+        $(this).dequeue();
+    });
+    keyPressActive = false;
+}
+function contactMe(){
+    c.innerHTML += "2";
+    c.innerHTML += textContact;
+    c.scrollTo(0, c.scrollHeight);
+}
 
 function LoadNextText(){
     if(index < texts.length){
