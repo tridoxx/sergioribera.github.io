@@ -57,7 +57,6 @@ function LoadNextText(){
         }
         if(indexInicio == textsInicio.length){
             keyPressActive = true;
-            $("#input_trampa").prompt();
             $("#input_trampa").focus();
             $("#input_trampa").click();
         }
