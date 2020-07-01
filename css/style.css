@@ -1,0 +1,109 @@
+:root {
+    --black: rgb(0, 0, 0);
+    --black-grey: rgb(32, 32, 32);
+    --blue: rgb(39, 122, 255);
+}
+::-webkit-scrollbar {
+    width: .25rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--black-grey);
+    border-radius: .18rem;
+}
+::-webkit-resizer{
+	background: #6f99ff;
+}
+body{ 
+    font-family: sans-serif;
+    overflow-x: hidden !important;
+    overflow-y: overlay;
+    width: 100vw !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: initial;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.container section {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+}
+.px{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: calc(100vw - 4em) !important;
+}
+#video_presentacion {
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    left: -20%;
+    top: -15%;
+}
+.firstTitle{ background-color: white;padding: 5%; }
+/*
+
+
+        ------- SKILLS ----------
+
+
+*/
+.skills-cotent-1{ padding-top: 1rem; }
+.skills-cotent-2{ padding-top: 2rem; }
+.skills-cotent-3{ padding-top: 3rem; }
+.skills-title { display: flex; align-items: flex-end; }
+.skills-title h4 { padding-bottom: 3px; }
+.skills-list { width: 100%;height: 100%;padding-top: 1.5rem;display: list-item;list-style: none; }
+.skills-item { color: black; margin-top: 1rem; display: flex;width: 85%; }
+.skills-item-icon { width: 10%;margin-right: 5%; }
+.skills-item-icon svg { height: 100%;width: 100%; }
+.skills-scrollbar-bg { width: 80%; margin-top: 5%; height: .25em;border-radius: .175em;background-color: var(--black-grey);display: inline-flex;justify-content: space-between; }
+.skills-scrollbar-bg > span { right: -20%;position: relative;height: 24px;top: -10px; }
+.skills-scrollbar-percentage { height: .25em;width: 0%;background-color: var(--blue);border-radius: .175em; }
+.skills-item[animate="10"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-10 3s forwards;animation: size-scroll-10 3s forwards; }
+.skills-item[animate="20"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-20 3s forwards;animation: size-scroll-20 3s forwards; }
+.skills-item[animate="30"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-30 3s forwards;animation: size-scroll-30 3s forwards; }
+.skills-item[animate="40"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-40 3s forwards;animation: size-scroll-40 3s forwards; }
+.skills-item[animate="50"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-50 3s forwards;animation: size-scroll-50 3s forwards; }
+.skills-item[animate="60"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-60 3s forwards;animation: size-scroll-60 3s forwards; }
+.skills-item[animate="70"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-70 3s forwards;animation: size-scroll-70 3s forwards; }
+.skills-item[animate="80"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-80 3s forwards;animation: size-scroll-80 3s forwards; }
+.skills-item[animate="90"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-90 3s forwards;animation: size-scroll-90 3s forwards; }
+.skills-item[animate="100"] > .skills-scrollbar-bg > .skills-scrollbar-percentage{ -webkit-animation: size-scroll-100 3s forwards;animation: size-scroll-100 3s forwards; }
+
+@keyframes size-scroll-10 { 0%{ width: 0%; } 100%{ width: 10%; } }
+@keyframes size-scroll-20 { 0%{ width: 0%; } 100%{ width: 20%; } }
+@keyframes size-scroll-30 { 0%{ width: 0%; } 100%{ width: 30%; } }
+@keyframes size-scroll-40 { 0%{ width: 0%; } 100%{ width: 40%; } }
+@keyframes size-scroll-50 { 0%{ width: 0%; } 100%{ width: 50%; } }
+@keyframes size-scroll-60 { 0%{ width: 0%; } 100%{ width: 60%; } }
+@keyframes size-scroll-70 { 0%{ width: 0%; } 100%{ width: 70%; } }
+@keyframes size-scroll-80 { 0%{ width: 0%; } 100%{ width: 80%; } }
+@keyframes size-scroll-90 { 0%{ width: 0%; } 100%{ width: 90%; } }
+@keyframes size-scroll-100 { 0%{ width: 0%; } 100%{ width: 100%; } }
+
+/*
+
+
+        ------ Ajustes ------
+
+
+*/
+@media screen and (max-width: 768px){
+    .px{
+        padding-left: 2em;
+        padding-right: 2em;
+        width: calc(100vw - 2em) !important;
+    }
+}
